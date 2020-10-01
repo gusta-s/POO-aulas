@@ -1,6 +1,3 @@
-# Poo20201
-Repositório direcionado para os códigos da disciplina Programação Orientada a Objetos (POO), ministrada pelo professor Marcelo Vidigal
-
 <h1>Tutorial Git</h1>
 <h2>Introdução</h2>
   O Git é um sistema open-source de controle de versão de código.
@@ -51,3 +48,68 @@ Repositório direcionado para os códigos da disciplina Programação Orientada 
   Quando a linha de comando não especifica o que empurrar com <refspec>... argumentos ou --all, --mirror, --tagsopções, o comando encontra o padrão <refspec>através da consulta remote.*.pushde configuração, e se ele não for encontrado, honras push.defaultde configuração para decidir o que push.
 
 Quando nem a linha de comando nem a configuração especificam o que enviar, o comportamento padrão é usado, que corresponde ao simple valor para push.default: o branch atual é enviado para o branch upstream correspondente, mas como medida de segurança, o push é abortado se o o branch upstream não tem o mesmo nome que o local.
+
+### Git branch
+O comando git branch lista todas as branches locais.
+> A branch **master** é a padrão e principal de todo repositório
+```sh    
+git branch
+```
+
+Caso queira a lista de branches remoto:
+```sh 
+git branch -a
+```
+
+Outros comandos em relação a branch são:
+
+* Deletar:
+
+  ```sh
+  git branch -d nome-branch
+  ```
+  
+* Renomear:
+  ```sh
+  git branch -m novo-nome
+  ```
+  ```sh
+  git branch -m nome-branch-atual novo-nome-branch
+  ```
+
+### Git checkout
+
+Para navegar entre as branches, basta usar git checkout referenciando a branch desejada.
+```sh 
+git checkout nome-branch
+```
+
+Para criar uma nova ramificação e automaticamente ir para ela, utiliza-se o complemento `-b`:
+
+```sh 
+git checkout -b nome-nova-branch
+```
+
+### Git diff
+O comando git diff mostra todas as alterações feitas nos arquivos da branch atual
+
+```sh 
+git diff
+```
+
+Outras variações do comando git diff são:
+
+* Mostrar somente o nome dos arquivos alterados:
+  ```sh 
+  git diff --name-only
+  ```
+  
+* Mostrar o que foi alterado somente em _arquivo.extensão_:
+  ```sh
+  git diff arquivo.extensão
+  ```
+  
+* Mostrar as alterações entre dois branches:
+  ```sh 
+  git diff nome-branch-1 nome-branch-2
+  ```
