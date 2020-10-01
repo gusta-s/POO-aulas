@@ -26,3 +26,28 @@ Repositório direcionado para os códigos da disciplina Programação Orientada 
     
       <git fetch>
      
+<h3>Git pull</h3>
+    <p1> O comando git pull incorpora mudanças de um repositório remoto no branch atual. No modo atual, o git pull é uma abreviação do git fetch e seguido por git merge FETCH_HEAD.</p1>
+    
+     <git pull [<options>] [<repository> [<refspec>…]]>
+     
+   <p1> [repository] -> deve ser o nome de um repositório remoto conforme passado para git-fetch. 
+    
+      Algumas opções de option:-q, --quieto, -v, --verbose, --commit, --no-commit, --editar, -e, --no-edit, --cleanup...
+
+<h3>Git push</h3>
+  
+<p1> O comando git push atualiza as referências remotas usando refêrencias locais, enquanto envia os objetos necessários para completar as referências fornecidas</p1>
+        
+        git push [--todos | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-          pack = <git-receive-pack>]
+	   [--repo = <repositório>] [-f | --force] [-d | --delete] [--prune] [-v | --verbose]
+	   [-u | --set-upstream] [-o <string> | --push-option = <string>]
+	   [- [sem-] assinado | --signed = (verdadeiro | falso | se solicitado)]
+	   [--force-with-lease [= <refname> [: <expect>]]]
+	   [--não verificar] [<repositório> [<refspec>…]]
+
+<p1> Quando a linha de comando não especifica onde enviar com o <repository>argumento, a branch.*.remoteconfiguração do branch atual é consultada para determinar onde enviar. Se a configuração estiver ausente, o padrão é a origem.
+  
+  Quando a linha de comando não especifica o que empurrar com <refspec>... argumentos ou --all, --mirror, --tagsopções, o comando encontra o padrão <refspec>através da consulta remote.*.pushde configuração, e se ele não for encontrado, honras push.defaultde configuração para decidir o que push.
+
+Quando nem a linha de comando nem a configuração especificam o que enviar, o comportamento padrão é usado, que corresponde ao simple valor para push.default: o branch atual é enviado para o branch upstream correspondente, mas como medida de segurança, o push é abortado se o o branch upstream não tem o mesmo nome que o local.
