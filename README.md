@@ -116,13 +116,14 @@ Outras variações do comando git diff são:
 <h3>Git merge</h3>
   
 <p1> O comando git merge Incorpora mudanças dos commits nomeados (desde o momento em que seus históricos divergiram do branch atual) no branch atual. Este comando é usado por git pull para incorporar alterações de outro repositório e pode ser usado manualmente para mesclar alterações de um branch em outro.</p1>
-        
+
+ ``       
 git merge [-n] [--stat] [--no-commit] [--squash] [- [no-] editar]
 	[--não-verificar] [-s <estratégia>] [-X <opção da estratégia>] [-S [<keyid>]]
 	[- [no-] permitir-não-relacionados-históricos]
 	[- [no-] reajuste-atualização automática] [-m <msg>] [-F <arquivo>] [<commit>…]
 git merge (--continue | --abort | --quit)
-
+``
 <p1> Incorpora mudanças dos commits nomeados (desde o momento em que seus históricos divergiram do branch atual) no branch atual. Este comando é usado por git pull para incorporar alterações de outro repositório e pode ser usado manualmente para mesclar alterações de um branch em outro.
 
 Suponha que o seguinte histórico exista e o branch atual seja " master":
