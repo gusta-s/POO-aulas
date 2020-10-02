@@ -145,4 +145,3 @@ Incorpora mudanças dos commits nomeados (desde o momento em que seus histórico
 Suponha que o seguinte histórico exista e o branch atual seja " master":
 Então " git merge topic" irá repetir as mudanças feitas no topicbranch desde que divergiu de master(ie, E) até seu commit atual ( C) no topo master, e gravará o resultado em um novo commit junto com os nomes dos dois commits pais e uma mensagem de log do usuário descrevendo as mudanças.
 
-A segunda sintaxe (" git merge --abort") só pode ser executada após a fusão resultar em conflitos. git merge --abort abortará o processo de mesclagem e tentará reconstruir o estado de pré-mesclagem. No entanto, se houver mudanças não confirmadas quando a mesclagem começou (e especialmente se essas mudanças foram modificadas depois que a mesclagem foi iniciada), git merge --abort em alguns casos será incapaz de reconstruir as mudanças originais (pré-mesclagem).
