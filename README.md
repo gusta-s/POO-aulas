@@ -9,12 +9,13 @@
     O git init é usado para tranformar um diretório em um repositório GIT. Após a execução do comando passará a existir uma pasta .git neste diretório.
 	
     git init <directory>
+    
 <h3>Git status</h3>
     O git status é usado para exibir a lista de arquivos alterados e os arquivos que ainda não foram adicionados ou confirmados.
 	
     git status 
     
-<h3>Git add<h3/>
+<h3>Git add</h3>
     O git add é usado para adicionar ou alterar um arquivo proposto ao índice.
 	  
     git add <nome_do_arquivo>
