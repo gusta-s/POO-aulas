@@ -142,9 +142,8 @@ git merge (--continue | --abort | --quit)
 
 Incorpora mudanças dos commits nomeados (desde o momento em que seus históricos divergiram do branch atual) no branch atual. Este comando é usado por git pull para incorporar alterações de outro repositório e pode ser usado manualmente para mesclar alterações de um branch em outro.
 
-< h3 > Git reset </ h3 >
-  
-< p1 > Redefine o HEAD atual para o estado especificado. </p1>
+<h3>Git reset</h3>
+	<p1>Redefine o HEAD atual para o estado especificado. </p1>
 
  ``       
 git reset [q] [<tree-ish>] [-] <pathspec> ...
@@ -152,7 +151,5 @@ git reset [q] [<tree-ish>] [-] <pathspec> ...
 	git reset (--patch | -p) [<tree-ish>] [-] [<pathspec>…]
 	git reset [--soft | --misturado [-N] | --hard | --merge | --keep] [-q] [<commit>]
 ``
-
-< p1 > O comando git reset é uma ferramenta complexa e versátil para desfazer alterações. Ele tem três formas principais de invocação. Estas formas correspondem aos argumentos --soft, --mixed, --hard da linha de comandos. 
-
-< p1 > Cada um dos três argumentos corresponde a um mecanismo de gerenciamento do estado interno do Git: a árvore de confirmação (HEAD), o índice de staging e o diretório de trabalho.
+	O comando git reset é uma ferramenta complexa e versátil para desfazer alterações. Ele tem três formas principais de invocação. Estas formas correspondem aos argumentos --soft, --mixed, --hard da linha de comandos. 
+	Cada um dos três argumentos corresponde a um mecanismo de gerenciamento do estado interno do Git: a árvore de confirmação (HEAD), o índice de staging e o diretório de trabalho.
