@@ -152,5 +152,6 @@ git reset [q] [<tree-ish>] [-] <pathspec> ...
 	git reset [--soft | --misturado [-N] | --hard | --merge | --keep] [-q] [<commit>]
 ``
 
-	O comando git reset é uma ferramenta complexa e versátil para desfazer alterações. Ele tem três formas principais de invocação. Estas formas correspondem aos argumentos --soft, --mixed, --hard da linha de comandos. 
-	Cada um dos três argumentos corresponde a um mecanismo de gerenciamento do estado interno do Git: a árvore de confirmação (HEAD), o índice de staging e o diretório de trabalho.
+O comando git reset é uma ferramenta complexa e versátil para desfazer alterações. Ele tem três formas principais de invocação. Estas formas correspondem aos argumentos --soft, --mixed, --hard da linha de comandos. 
+
+Cada um dos três argumentos corresponde a um mecanismo de gerenciamento do estado interno do Git: a árvore de confirmação (HEAD), o índice de staging e o diretório de trabalho.
