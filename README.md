@@ -10,7 +10,18 @@
   <ul>
 	
     git init <directory>
+<h3>Git status</h3>
+    O git status é usado para exibir a lista de arquivos alterados e os arquivos que ainda não foram adicionados ou confirmados.
+  <ul> 
+	
+    git status 
     
+<h3>Git add<h3/>
+    O git add é usado para adicionar ou alterar um arquivo proposto ao índice.
+  <ul>
+	  
+    git add <nome_do_arquivo>
+	  
 <h3>Git clone</h3>
     O git clone é usado sobretudo para apontar para um repositório existente e fazer um clone ou cópia deste repositório no novo diretório, em outro local.
   <ul>   
