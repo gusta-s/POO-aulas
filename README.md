@@ -5,6 +5,12 @@
   Além disso, é possivel retomar uma funcionalidade já alterada, facilitar o trabalho colaborativo de desenvolvedores e um sistema de backup.
   
 <h2>Comandos:</h2> 
+<h3>Git init</h3>
+    O git init é usado para tranformar um diretório em um repositório GIT. Após a execução do comando passará a existir uma pasta .git neste diretório.
+  <ul>
+	
+    git init <directory>
+    
 <h3>Git clone</h3>
     O git clone é usado sobretudo para apontar para um repositório existente e fazer um clone ou cópia deste repositório no novo diretório, em outro local.
   <ul>   
