@@ -142,6 +142,17 @@ git merge (--continue | --abort | --quit)
 
 Incorpora mudanças dos commits nomeados (desde o momento em que seus históricos divergiram do branch atual) no branch atual. Este comando é usado por git pull para incorporar alterações de outro repositório e pode ser usado manualmente para mesclar alterações de um branch em outro.
 
-Suponha que o seguinte histórico exista e o branch atual seja " master":
-Então " git merge topic" irá repetir as mudanças feitas no topicbranch desde que divergiu de master(ie, E) até seu commit atual ( C) no topo master, e gravará o resultado em um novo commit junto com os nomes dos dois commits pais e uma mensagem de log do usuário descrevendo as mudanças.
+< h3 > Git reset </ h3 >
+  
+< p1 > Redefine o HEAD atual para o estado especificado. </p1>
 
+ ``       
+git reset [q] [<tree-ish>] [-] <pathspec> ...
+	git reset [q] [--pathspec-de-file = <file> [--pathspec-file-nul]] [<tree-ish>]
+	git reset (--patch | -p) [<tree-ish>] [-] [<pathspec>…]
+	git reset [--soft | --misturado [-N] | --hard | --merge | --keep] [-q] [<commit>]
+``
+
+< p1 > O comando git reset é uma ferramenta complexa e versátil para desfazer alterações. Ele tem três formas principais de invocação. Estas formas correspondem aos argumentos --soft, --mixed, --hard da linha de comandos. 
+
+< p1 > Cada um dos três argumentos corresponde a um mecanismo de gerenciamento do estado interno do Git: a árvore de confirmação (HEAD), o índice de staging e o diretório de trabalho.
