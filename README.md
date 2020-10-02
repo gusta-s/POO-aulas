@@ -125,7 +125,7 @@ git merge [-n] [--stat] [--no-commit] [--squash] [- [no-] editar]
 git merge (--continue | --abort | --quit)
 ``
 
-< p1> Incorpora mudanças dos commits nomeados (desde o momento em que seus históricos divergiram do branch atual) no branch atual. Este comando é usado por git pull para incorporar alterações de outro repositório e pode ser usado manualmente para mesclar alterações de um branch em outro.
+Incorpora mudanças dos commits nomeados (desde o momento em que seus históricos divergiram do branch atual) no branch atual. Este comando é usado por git pull para incorporar alterações de outro repositório e pode ser usado manualmente para mesclar alterações de um branch em outro.
 
 Suponha que o seguinte histórico exista e o branch atual seja " master":
 Então " git merge topic" irá repetir as mudanças feitas no topicbranch desde que divergiu de master(ie, E) até seu commit atual ( C) no topo master, e gravará o resultado em um novo commit junto com os nomes dos dois commits pais e uma mensagem de log do usuário descrevendo as mudanças.
