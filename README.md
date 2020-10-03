@@ -22,7 +22,9 @@
     
 <h3>Git commit</h3>
    Commit é um comentário que precisa ser escrito sempre que é feita alguma alteração no projeto.
-   O comando git commit é usado para indicar as alterações feitas dentro do repositório. É importante saber que o Git não gera novas cópias do projeto a cada commit, dentro dele só vai existir a versão mais atual. 
+   
+   O comando git commit é usado para indicar as alterações feitas dentro do repositório. É importante saber que o Git não gera novas cópias do projeto a cada commit, dentro dele só vai existir a versão mais atual.
+   
    Para usar quando a modificação já estiver sido adicionada:
    
     git commit –m "comentário"
@@ -37,6 +39,7 @@
     git log
    	
   Variações de comando para o git log:
+  
    Para fornecer uma forma mais simplificada ao mostrar as informações (log’s):
     
     <git log –oneline>
@@ -45,25 +48,26 @@
    
     <git log –graph>
    
-   Para visualizar outras formas de utilizar o git log
+   Para visualizar outras formas de utilizar o git log:
    
     <git log –help>
    
 <h3>Git remote</h3>
    Com o comando git remote é possível criar, ver e excluir conexões com outros repositórios. 
+   
    Lista o nome de cada repositório remoto:
    
      git remote
    
-   Além de listar osnomes, esse comando fornece a URL do repositório:
+   Além de listar os nomes, esse comando fornece a URL do repositório:
    
      git remote –v
 
-   Para adicionar umnovo repositório:
+   Para adicionar um novo repositório:
 
-     git remote add <nome do repositório > <url do repositório>
+     git remote add <nome do repositório> <url do repositório>
 	
-   Para  remover a ligação com o repositório chamado:
+   Para remover a ligação com o repositório chamado:
 
      git remote rm <nome do repositório>
 	  
