@@ -29,7 +29,7 @@
    
     git commit –m "comentário"
    
-   Para realizar ao mesmo tempo a função de adicionar a alteração no arquivo e criar um comentário acerca dessa nudança:
+   Para realizar ao mesmo tempo a função de adicionar a alteração no arquivo e criar um comentário acerca dessa mudança:
    
     git commit –am “comentário”
    
