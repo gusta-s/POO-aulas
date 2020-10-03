@@ -25,11 +25,11 @@
    O comando git commit é usado para indicar as alterações feitas dentro do repositório. É importante saber que o Git não gera novas cópias do projeto a cada commit, dentro dele só vai existir a versão mais atual. 
    Para usar quando a modificação já estiver sido adicionada:
    
-   	git commit –m "comentário"
+    git commit –m "comentário"
    
    Para realizar ao mesmo tempo a função de adicionar a alteração no arquivo e criar um comentário acerca dessa nudança:
    
-  	 <git commit –am “comentário”
+    git commit –am “comentário”
    
 <h3>Git log</h3>
    Esse comando é utilizado para visualizar o histórico de alterações, e mostra informações relacionadas ao commit, que vai possuir um hash (uma identidade exclusiva para cada commit), e informações relacionadas também ao autor e a data do projeto.
