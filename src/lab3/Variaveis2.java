@@ -25,6 +25,37 @@ public class Variaveis2 {
 		Integer variavel2; // tipos primitivo de variavel
 		variavel2 = null;
 		System.out.println(variavel2); // console: null
+		
+		/*
+		 * TIPOS DE VARIÁVEIS
+		 */
+		byte letras = 26;
+		Byte letras2 = 26; // tambem eh um tipo primitivo (tipos primitivos admitem o valor null)
+		System.out.println(letras + " " + letras2);
+		//letras = null; // erro
+		letras2 = null;
+		
+		short anoAtual = 2020;
+		long numeroLong = 216545154154154L; // o "L" deve ser posto no final do numero para indicar que eh do tipo long
+		float nota = 8.5f; // "f" deve ser posto no final para indicar que eh float
+		double numeroDouble = 0.00255050500450d; // "d" deve ser posto no final para indicar que eh double
+		
+		/* esses tipos tambem admitem tem sua versao primitiva*/
+		Short primitivoShort = anoAtual;
+		Long primitivoLong = numeroLong;
+		Float primitivoFloat = nota;
+		Double primitivoDouble = numeroDouble;
+		
+		System.out.println(primitivoShort + " " + anoAtual);
+		
+		boolean javaMelhorLinguagem = true; // o tipo "boolen" admite dois valores: verdadeiro (true) ou falso (false)
+		char letra = 'g';
+		//char nome = 'Gustavo'; // erro: o tipo char armazena apenas 1 letra
+		String nome = "Gustavo"; // o tipo String armazena sentenças (palavras/frases)
+								 // vale salientar que as aspas, para a String, são duplas
+		
+		System.out.println(letra + nome); // concatenacao
+		System.out.println(letra + " " + nome);
 	}
 
 }
