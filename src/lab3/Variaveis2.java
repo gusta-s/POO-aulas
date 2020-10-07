@@ -56,6 +56,28 @@ public class Variaveis2 {
 		
 		System.out.println(letra + nome); // concatenacao
 		System.out.println(letra + " " + nome);
+		
+		/*
+		 * INCREMENTO
+		 */
+		int variavel3 = 5;
+		System.out.println(++variavel3 + " -> pre-incremento"); // ela eh incrementada antes de imprimir
+		System.out.println(variavel3 + " -> variavel");
+		
+		variavel3 = 5;
+		System.out.println(variavel3++ + " -> pos-incremento"); // ela eh incrementada depois de imprimir
+		System.out.println(variavel3 + " -> variavel");
+		
+		// o mesmo acontece para o sinal negativo (pre e pos decremento):
+		
+		variavel3 = 5;
+		System.out.println(--variavel3 + " -> pre-decremento"); // ela eh decrementada antes de imprimir
+		System.out.println(variavel3 + " -> variavel");
+		
+		variavel3 = 5;
+		System.out.println(variavel3-- + " -> pos-decremento"); // ela eh decrementada depois de imprimir
+		System.out.println(variavel3 + " -> variavel");
+		
 	}
 
 }
