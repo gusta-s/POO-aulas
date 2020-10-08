@@ -47,9 +47,29 @@ public class Tipos_Variaveis{
                           // colocado entre aspas simples
         String palavra = "java"; //o tipo String armazena setenças
 
-        boolean programarEhBom = true;
-        // o tipo "boolen" admite dois valores: verdadeiro (true) ou falso (false)
-    
+        boolean programarEhBom = true;// o tipo "boolen" admite dois valores: verdadeiro (true) ou falso (false)
+      
+
+        /*
+        * INCREMENTO E DECREMENTO
+        */
+        // operadores pré-fixados e pós fixados
+        int num = 8;
+        System.out.println(++num); //9
+        System.out.println(num);   //9
+
+        num = 8;
+        System.out.println(num);   //8
+        System.out.println(++num); //9
+      
+        num = 8
+        System.out.println(--num); //7
+        System.out.println(num);   //7
+
+        num = 8
+        System.out.println(num);   //8
+        System.out.println(--num); //7
+
         
 
 
