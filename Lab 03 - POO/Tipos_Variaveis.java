@@ -70,10 +70,5 @@ public class Tipos_Variaveis{
         System.out.println(num);   //8
         System.out.println(--num); //7
 
-        
-
-
-
-
-    }
+   }
 }
