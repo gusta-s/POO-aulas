@@ -59,6 +59,32 @@ public class Program {
 		// long resultadoCasting3 = valorShort - valorLong + valorInt - valorDouble; // erro
 		long resultadoCasting3 = (long)(valorShort - valorLong + valorInt - valorDouble);
 		System.out.println(resultadoCasting3); // 4
+		
+		/*
+		 * LOGICA CONDICIONAL
+		 */
+		
+		// operadores: [>][>=][<][<=][!=][==]
+		
+		if (valor1 >= valor4) {
+			System.out.println("true");
+		}
+		else {
+			System.out.println("false");
+		}
+		
+		boolean condicao1 = (valor4 > valor3); // o resultado de uma condicao é apenas true ou false
+		System.out.println(condicao1); // true
+		
+		boolean condicao2 = (valor2 != 8);
+		System.out.println(condicao2); // false
+		
+		boolean condicao3 = condicao1 == condicao2; // operacoes entre booleanos
+		System.out.println(condicao3); // false
+		
+		// OPERADOR TERNARIO
+		boolean condicao = (valor1 >= valor4) ? true : false; 
+		System.out.println(condicao); // false
 	}
 
 }
