@@ -85,6 +85,32 @@ public class Program {
 		// OPERADOR TERNARIO
 		boolean condicao = (valor1 >= valor4) ? true : false; 
 		System.out.println(condicao); // false
+		
+		/*
+		 * ENCADEANDO INSTRUCOES E OPERADORES LOGICOS
+		 */
+		
+		// operadores: [&][&&][|][||][^][!]
+		
+		int a = 1, b = 2, c = 3, d = 4;
+		boolean resultadoLogico;
+		
+		if (a > b & c > d) { // AND (e)    false
+			System.out.println("Bloco 1");
+		}
+		else if (a > b && b <= d) { // AND (e)    false   
+			System.out.println("Bloco 2");
+		}
+		else {
+			System.out.println("Bloco 3");
+		}
+		
+		resultadoLogico = (a > b || b <= d); // OR (ou)
+		System.out.println(resultadoLogico); // true
+		System.out.println(!resultadoLogico); // false
+		
+		resultadoLogico = (a > b ^ b <= d); // XOR (ou exclusivo)
+		System.out.println(resultadoLogico); // true
 	}
 
 }
