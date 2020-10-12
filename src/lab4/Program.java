@@ -29,6 +29,36 @@ public class Program {
 		resultado = valor1 + ++valor3 - valor1-- * ++valor2;
 		System.out.println(resultado); // -19
 			
+		/*
+		 * CASTING (IMPLICITO E EXPLICITO)
+		 */
+		
+		int valorInt = 1;
+		float valorFloat = 2.0f;
+		double valorDouble = 3.0d;
+		long valorLong = 4;
+		byte valorByte = 5;
+		short valorShort = 6;
+		
+		//valorInt = valorLong; // erro.  para fazer essa conversao, utiliza-se o casting [valorInt = (int)valorLong]
+		valorInt = (int)valorLong;
+		valorLong = valorInt; // ok
+		
+		//short resultadoCasting = valorInt; // erro
+		short resultadoCasting = (short)valorByte;
+		System.out.println(resultadoCasting); // 5
+		
+		double resultadoCasting2 = valorLong - valorDouble; // ok
+		resultadoCasting = (short)(valorByte - valorLong); // ok
+		System.out.println(resultadoCasting + " " + resultadoCasting2); // 1 1.0
+		
+		resultadoCasting2 = valorFloat - valorDouble;
+		valorDouble = valorFloat;
+		System.out.println(valorDouble); // 2.0
+		
+		// long resultadoCasting3 = valorShort - valorLong + valorInt - valorDouble; // erro
+		long resultadoCasting3 = (long)(valorShort - valorLong + valorInt - valorDouble);
+		System.out.println(resultadoCasting3); // 4
 	}
 
 }
