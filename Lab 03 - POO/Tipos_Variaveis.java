@@ -53,15 +53,16 @@ public class Tipos_Variaveis{
         /*
         * INCREMENTO E DECREMENTO
         */
-        // operadores pré-fixados e pós fixados
+        // operadores pré-fixados e pós-fixados
         int num = 8;
-        System.out.println(++num); //9
+        System.out.println(++num); //9 incremento  feito antes do print
         System.out.println(num);   //9
 
         num = 8;
         System.out.println(num);   //8
-        System.out.println(++num); //9
+        System.out.println(++num); //9 incremento feito depois do print
       
+        //o mesmo ocorre com o decremento 
         num = 8
         System.out.println(--num); //7
         System.out.println(num);   //7
