@@ -55,16 +55,23 @@ public class Operadores_Conversao{
         int resultadoF = valor4 + --valor3 * valor2++; // 1+(2 * 6)
         System.out.println(resultadoF);//13
 
+        /*
+        * CONVERSAO DE TIPOS
+        */
 
+        //conversao implicita
+        int valorInt = 50; 
+        long valorLong = valorInt; //conversao executada automaticamente
 
+        //conversao explicita
+        //long valorLong = 50; 
+        //int valorInt = (int) valorLong; //coversao explicitada em code
+        
+        long valorLong = 5;
+        byte valorByte = 7;
+        short resultado1 = valorByte;
 
-
-
-
-
-
-
-
-
+        short resultado1 = valorLong;
+        
     }
 }
