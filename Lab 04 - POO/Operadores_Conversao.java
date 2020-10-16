@@ -9,7 +9,7 @@ public class Operadores_Conversao{
 
         /*
         * OPERADORES DE ATRIBUIÇÃO COMPOSTA
-        *    sao eles: +=, -=, *=, /=, %=
+        *    sao eles: [+=], [-=], [*=], [/=], [%=]
         */
         
         int numb = 15;
@@ -72,6 +72,46 @@ public class Operadores_Conversao{
         short resultado1 = valorByte;
 
         short resultado1 = valorLong;
+
+        /*
+        * LOGICA CONDICIONAL
+        *  Operadores Relacionais
+        */
+        //sao eles: [>], [<], [>=], [<=], [==], [!=]
+
+        if (valor1 > valor2){
+          System.out.println("valor1 eh mair");
+
+        }else if (valor1 < valor2){
+          System.out.println("valor2 eh maior ");
+
+        }else {
+          System.out.println("os valores sao iguais");
+
+        }
+
+        boolean condition1 = (valor1 > valor2); //reusltado apenas 'true' ou 'false'
+        System.out.println(condition1); //true
+
+        boolean condition2 = (valor1 < valor2);
+        System.out.println(condition2); //false
+
+        /* Operadores Logicos 
+        *  sao eles: [&], [|], [^], [!]
+        */
         
+        int a = 15, b = 7 , c = 5;
+        boolean resultLogic = true;
+
+        if (a < b & b > c){  //( false AND true) e
+          System.out.println( !resultLogic ); //false
+
+        }else if(a => b | b > c){  //(true OR true) ou
+          System.out.println(resultLogic); //true
+
+        }else if( a < c ^ b <= a){ //(false XOR true) ou exclusivo
+          System.out.println(resultLogic);
+        }
+
     }
 }
