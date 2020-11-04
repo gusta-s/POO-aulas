@@ -25,7 +25,7 @@ public class Lacos_Condicionais{
             System.out.println(num1 + " X "+ num2 + " = "+ total);
         }
 
-         /*
+        /*
         * LAÇO DO-WHILE
         */
         
@@ -49,6 +49,12 @@ public class Lacos_Condicionais{
 
         }while( numb2 <= 10);
         
+        /*
+        * LAÇO WHILE
+        */
+
+
+
 
     }
 }
